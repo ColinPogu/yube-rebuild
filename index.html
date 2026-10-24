@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yube Handmade | Luxury Handmade Crochet Swimwear and Resort Wear</title>
+<meta name="description" content="Yube Handmade crafts luxury handmade crochet swimwear, resort wear, and statement pieces, each one made by hand. Shop the latest drops and join for first looks and restock alerts.">
+<meta property="og:title" content="Yube Handmade | Luxury Handmade Crochet Swimwear">
+<meta property="og:description" content="Handmade crochet swimwear, resort wear, and statement pieces, each one made by hand. Shop new drops and get restock alerts before they sell out.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf6ef;
+    --sand:#f3e9db;
+    --shell:#efe2d2;
+    --ink:#3a322c;
+    --ink-soft:#6f6358;
+    --coral:#d98b6f;
+    --coral-deep:#c5765a;
+    --sage:#8ea389;
+    --rose:#e9c3b4;
+    --line:#e6d9c8;
+    --white:#ffffff;
+    --radius:20px;
+    --radius-sm:14px;
+    --shadow:0 18px 40px -22px rgba(90,64,48,.45);
+    --shadow-soft:0 10px 30px -18px rgba(90,64,48,.4);
+    --maxw:1180px;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Nunito",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* Announcement bar */
+  .announce{
+    background:var(--coral);
+    color:#fff;
+    text-align:center;
+    font-size:.82rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:9px 16px;
+    font-weight:600;
+  }
+
+  /* Nav */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,246,239,.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:74px;
+  }
+  .brand{
+    font-family:var(--serif);
+    font-size:1.55rem;
+    font-weight:600;
+    letter-spacing:.02em;
+    color:var(--ink);
+  }
+  .brand span{color:var(--coral-deep)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{
+    font-size:.93rem;font-weight:600;color:var(--ink-soft);
+    transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--coral-deep)}
+  .nav-cta{
+    background:var(--ink);color:#fff;
+    padding:10px 20px;border-radius:999px;
+    font-size:.88rem;font-weight:700;
+    transition:background .2s,transform .2s;
+  }
+  .nav-cta:hover{background:var(--coral-deep);transform:translateY(-1px)}
+  .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+  /* Hero */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(1200px 500px at 80% -10%, rgba(233,195,180,.55), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(142,163,137,.28), transparent 55%),
+      var(--sand);
+    overflow:hidden;
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+    padding:70px 24px 80px;max-width:var(--maxw);margin:0 auto;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--coral-deep);margin-bottom:18px;
+  }
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.4rem,5vw,3.9rem);
+    line-height:1.05;
+    letter-spacing:-.01em;
+    margin-bottom:20px;
+  }
+  .hero h1 em{font-style:italic;color:var(--coral-deep)}
+  .hero p.lead{
+    font-size:1.1rem;color:var(--ink-soft);max-width:30rem;margin-bottom:30px;
+  }
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:14px 28px;border-radius:999px;
+    font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s,background .2s;
+    cursor:pointer;border:0;
+  }
+  .btn-primary{background:var(--coral-deep);color:#fff;box-shadow:var(--shadow-soft)}
+  .btn-primary:hover{transform:translateY(-2px);background:var(--coral)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .hero-meta{margin-top:30px;display:flex;gap:28px;flex-wrap:wrap}
+  .hero-meta div{font-size:.86rem;color:var(--ink-soft)}
+  .hero-meta strong{display:block;font-family:var(--serif);font-size:1.3rem;color:var(--ink);font-weight:600}
+
+  /* Hero art (CSS only, no external image) */
+  .hero-art{
+    position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;
+    background:
+      linear-gradient(135deg, var(--rose), var(--coral) 70%);
+    box-shadow:var(--shadow);
+  }
+  .hero-art::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,.35) 2px, transparent 3px),
+      radial-gradient(circle at 60% 50%, rgba(255,255,255,.3) 2px, transparent 3px),
+      radial-gradient(circle at 40% 80%, rgba(255,255,255,.3) 2px, transparent 3px);
+    background-size:34px 34px,34px 34px,34px 34px;
+    background-position:0 0,17px 17px,8px 24px;
+    opacity:.9;
+  }
+  .hero-art .tag{
+    position:absolute;left:20px;bottom:20px;
+    background:rgba(251,246,239,.92);color:var(--ink);
+    padding:12px 18px;border-radius:14px;font-size:.85rem;font-weight:700;
+    box-shadow:var(--shadow-soft);
+  }
+  .hero-art .tag span{display:block;color:var(--coral-deep);font-weight:600;font-size:.76rem}
+
+  /* Section shell */
+  section{padding:76px 0}
+  .section-head{text-align:center;max-width:40rem;margin:0 auto 46px}
+  .section-head .eyebrow{margin-bottom:12px}
+  .section-head h2{
+    font-family:var(--serif);font-weight:500;
+    font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.1;margin-bottom:14px;
+  }
+  .section-head p{color:var(--ink-soft);font-size:1.05rem}
+
+  /* Collections */
+  .collections{background:var(--cream)}
+  .coll-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .coll{
+    position:relative;border-radius:var(--radius);overflow:hidden;
+    min-height:230px;display:flex;align-items:flex-end;
+    padding:22px;color:#fff;font-family:var(--serif);font-size:1.5rem;font-weight:600;
+    box-shadow:var(--shadow-soft);transition:transform .25s,box-shadow .25s;
+  }
+  .coll:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .coll span{position:relative;z-index:2;text-shadow:0 2px 14px rgba(60,40,30,.4)}
+  .coll::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(58,50,44,.5))}
+  .c1{background:linear-gradient(140deg,#e9c3b4,#d98b6f)}
+  .c2{background:linear-gradient(140deg,#cfdcc9,#8ea389)}
+  .c3{background:linear-gradient(140deg,#efd9c4,#c5765a)}
+  .c4{background:linear-gradient(140deg,#f0d7cd,#d98b6f)}
+  .c5{background:linear-gradient(140deg,#dfe6da,#9fae98)}
+  .c6{background:linear-gradient(140deg,#f6e7d4,#e0a98c)}
+
+  /* Products */
+  .products{background:var(--sand)}
+  .prod-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+  }
+  .card{
+    background:var(--white);border-radius:var(--radius);overflow:hidden;
+    box-shadow:var(--shadow-soft);transition:transform .25s,box-shadow .25s;
+    display:flex;flex-direction:column;
+  }
+  .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .card .swatch{
+    aspect-ratio:3/4;position:relative;
+  }
+  .card .swatch::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(255,255,255,.4) 2px, transparent 3px);
+    background-size:26px 26px;opacity:.8;
+  }
+  .s1{background:linear-gradient(145deg,#e9c3b4,#d98b6f)}
+  .s2{background:linear-gradient(145deg,#cfdcc9,#8ea389)}
+  .s3{background:linear-gradient(145deg,#f0d7cd,#c5765a)}
+  .s4{background:linear-gradient(145deg,#f6e7d4,#e0a98c)}
+  .s5{background:linear-gradient(145deg,#dfe6da,#9fae98)}
+  .s6{background:linear-gradient(145deg,#f3d6c6,#d98b6f)}
+  .s7{background:linear-gradient(145deg,#ead9c2,#c9a07f)}
+  .s8{background:linear-gradient(145deg,#e7cabc,#cf8468)}
+  .card .info{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .card .info h3{font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.2}
+  .card .info .price{color:var(--coral-deep);font-weight:700;font-size:1rem}
+  .card .info .note{font-size:.8rem;color:var(--ink-soft)}
+  .card .shop{
+    margin-top:auto;align-self:flex-start;
+    font-size:.84rem;font-weight:700;color:var(--ink);
+    border-bottom:2px solid var(--coral);padding-top:6px;
+  }
+  .center-cta{text-align:center;margin-top:42px}
+
+  /* Email capture */
+  .signup{
+    background:
+      radial-gradient(800px 400px at 15% 0%, rgba(233,195,180,.5), transparent 60%),
+      var(--ink);
+    color:var(--cream);
+  }
+  .signup-inner{
+    max-width:720px;margin:0 auto;text-align:center;padding:0 24px;
+  }
+  .signup .eyebrow{color:var(--rose)}
+  .signup h2{
+    font-family:var(--serif);font-weight:500;color:#fff;
+    font-size:clamp(2rem,4vw,2.9rem);line-height:1.08;margin-bottom:16px;
+  }
+  .signup p{color:#e9ddd0;font-size:1.08rem;margin-bottom:12px}
+  .signup ul{
+    list-style:none;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;
+    margin:22px 0 30px;
+  }
+  .signup li{font-size:.92rem;color:#f1e6d9;display:flex;align-items:center;gap:8px}
+  .signup li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--coral);display:inline-block}
+  .form{
+    display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;
+  }
+  .form input{
+    flex:1;min-width:220px;padding:15px 20px;border-radius:999px;border:0;
+    font-family:var(--sans);font-size:1rem;color:var(--ink);background:#fff;
+  }
+  .form input:focus{outline:3px solid var(--coral)}
+  .form button{
+    background:var(--coral-deep);color:#fff;border:0;border-radius:999px;
+    padding:15px 30px;font-weight:700;font-size:1rem;cursor:pointer;
+    font-family:var(--sans);transition:background .2s,transform .2s;
+  }
+  .form button:hover{background:var(--coral);transform:translateY(-1px)}
+  .form-note{font-size:.8rem;color:#c9bbac;margin-top:14px}
+  .form-success{display:none;margin-top:18px;font-size:1.05rem;color:var(--rose);font-weight:600}
+
+  /* Made by hand strip */
+  .madeby{background:var(--shell)}
+  .madeby-inner{
+    display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+  }
+  .madeby-art{
+    aspect-ratio:1/1;border-radius:26px;
+    background:linear-gradient(140deg,#cfdcc9,#8ea389);
+    position:relative;box-shadow:var(--shadow);
+  }
+  .madeby-art::before{
+    content:"";position:absolute;inset:0;border-radius:26px;
+    background-image:radial-gradient(circle at 30% 30%, rgba(255,255,255,.4) 2px, transparent 3px);
+    background-size:30px 30px;opacity:.85;
+  }
+  .madeby h2{
+    font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,3.4vw,2.6rem);
+    line-height:1.12;margin-bottom:18px;
+  }
+  .madeby p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:16px}
+  .madeby .facts{display:flex;gap:34px;margin-top:26px;flex-wrap:wrap}
+  .madeby .facts div strong{
+    display:block;font-family:var(--serif);font-size:1.6rem;color:var(--coral-deep);font-weight:600;
+  }
+  .madeby .facts div span{font-size:.86rem;color:var(--ink-soft)}
+
+  /* Footer */
+  footer{background:var(--ink);color:#e9ddd0;padding:60px 0 28px}
+  .foot-grid{
+    display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px;
+  }
+  footer .brand{color:#fff;margin-bottom:14px}
+  footer .brand span{color:var(--coral)}
+  footer p.blurb{color:#c9bbac;font-size:.92rem;max-width:22rem}
+  footer h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:16px;font-weight:700}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  footer ul a{color:#d8ccbd;font-size:.92rem;transition:color .2s}
+  footer ul a:hover{color:#fff}
+  .foot-bottom{
+    border-top:1px solid rgba(255,255,255,.12);padding-top:22px;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:.84rem;color:#b3a596;
+  }
+  .pay{display:flex;gap:8px;flex-wrap:wrap}
+  .pay span{
+    background:rgba(255,255,255,.1);padding:4px 10px;border-radius:6px;
+    font-size:.72rem;font-weight:600;color:#e9ddd0;
+  }
+
+  /* Responsive */
+  @media (max-width:980px){
+    .prod-grid{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:860px){
+    .nav-links{
+      display:none;position:absolute;top:74px;left:0;right:0;
+      flex-direction:column;background:var(--cream);padding:20px 24px;
+      gap:18px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-soft);
+    }
+    .nav-links.open{display:flex}
+    .nav-toggle{display:block}
+    .hero-inner{grid-template-columns:1fr;gap:36px}
+    .hero-art{max-width:420px}
+    .madeby-inner{grid-template-columns:1fr;gap:30px}
+    .coll-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:560px){
+    .prod-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+    .coll-grid{grid-template-columns:1fr}
+    section{padding:56px 0}
+    .hero-inner{padding:48px 24px 60px}
+    .foot-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">Handmade to order, one piece at a time. New drops land often.</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">Yube<span>Handmade</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#made">Made by Hand</a>
+      <a href="#signup">New Drops</a>
+      <a href="#shop" class="nav-cta">Shop All</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Luxury Handmade Crochet</span>
+        <h1>Crochet swimwear and resort wear, <em>made by hand</em> for you.</h1>
+        <p class="lead">Yube Handmade is an experience. Each swimsuit, kimono, and statement piece is crocheted by hand, so no two are ever quite the same.</p>
+        <div class="btn-row">
+          <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+          <a href="#signup" class="btn btn-ghost">Get First Looks</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>100%</strong>Handmade crochet</div>
+          <div><strong>1 of 1</strong>Made to order</div>
+          <div><strong>Worldwide</strong>Ships to you</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="tag"><span>Swim Week Collection</span>Shop the new drop</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="collections" id="collections">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Browse</span>
+        <h2>Find your next favorite piece</h2>
+        <p>From swimwear to statement vests, every collection is crocheted by hand in small batches.</p>
+      </div>
+      <div class="coll-grid">
+        <a href="#shop" class="coll c1"><span>Bikini</span></a>
+        <a href="#shop" class="coll c2"><span>Swimsuit</span></a>
+        <a href="#shop" class="coll c3"><span>The Vest Set</span></a>
+        <a href="#shop" class="coll c4"><span>YUBE</span></a>
+        <a href="#shop" class="coll c5"><span>Crochet Hats and Earrings</span></a>
+        <a href="#shop" class="coll c6"><span>YUBE Yarn</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Swim Week Collection</span>
+        <h2>Shop handmade luxury crochet</h2>
+        <p>A look at current pieces. Because each is made by hand, popular styles sell out and return as restocks.</p>
+      </div>
+      <div class="prod-grid">
+        <article class="card">
+          <div class="swatch s1" aria-hidden="true"></div>
+          <div class="info"><h3>The Faux Leather Crochet Maxi Dress</h3><div class="price">$625.00</div><div class="note">Made to order</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s2" aria-hidden="true"></div>
+          <div class="info"><h3>Miami Kimono Set</h3><div class="price">$475.00</div><div class="note">Resort wear</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s3" aria-hidden="true"></div>
+          <div class="info"><h3>The Eden Set</h3><div class="price">$400.00</div><div class="note">Two piece</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s4" aria-hidden="true"></div>
+          <div class="info"><h3>The Doll Set</h3><div class="price">$350.00</div><div class="note">Statement set</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s5" aria-hidden="true"></div>
+          <div class="info"><h3>The Island Bloom Set</h3><div class="price">$350.00</div><div class="note">Swimwear</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s6" aria-hidden="true"></div>
+          <div class="info"><h3>Endless Summer Kimono</h3><div class="price">$300.00</div><div class="note">Resort wear</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s7" aria-hidden="true"></div>
+          <div class="info"><h3>The Siren</h3><div class="price">$225.00</div><div class="note">Swimwear</div><span class="shop">Shop now</span></div>
+        </article>
+        <article class="card">
+          <div class="swatch s8" aria-hidden="true"></div>
+          <div class="info"><h3>Fringe Sexy Bikini</h3><div class="price">$175.00</div><div class="note">Bikini</div><span class="shop">Shop now</span></div>
+        </article>
+      </div>
+      <div class="center-cta"><a href="#shop" class="btn btn-primary">Shop All Pieces</a></div>
+    </div>
+  </section>
+
+  <!-- EMAIL CAPTURE -->
+  <section class="signup" id="signup">
+    <div class="signup-inner">
+      <span class="eyebrow">Join the list</span>
+      <h2>Be first on every new drop and restock.</h2>
+      <p>Because each piece is crocheted by hand, the best styles go quickly and only come back as restocks. Join the list so you hear before they do.</p>
+      <ul>
+        <li>First look at new drops</li>
+        <li>Restock alerts on sold out pieces</li>
+        <li>Behind the scenes from the studio</li>
+      </ul>
+      <form class="form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" aria-label="Your email address" required>
+        <button type="submit" onclick="var f=this.closest('.form');f.style.display='none';document.getElementById('ok').style.display='block';">Notify Me</button>
+      </form>
+      <div class="form-note">No spam, just new pieces and restocks. Unsubscribe any time.</div>
+      <div class="form-success" id="ok">You are on the list. Watch your inbox for the next drop.</div>
+    </div>
+  </section>
+
+  <!-- MADE BY HAND -->
+  <section class="madeby" id="made">
+    <div class="wrap madeby-inner">
+      <div class="madeby-art" aria-hidden="true"></div>
+      <div>
+        <span class="eyebrow">Meet the maker</span>
+        <h2>Every stitch is made by hand.</h2>
+        <p>Yube Handmade is a crochet fashion label dedicated to creating stylish, high quality crochet pieces. It began as a personal hobby, a way to unwind and express creativity, and grew into a label for people who want something made with care.</p>
+        <p>Because every piece is crocheted by hand and often made to order, each one carries small, one of a kind details you will not find anywhere else.</p>
+        <div class="facts">
+          <div><strong>Handmade</strong><span>Crocheted by hand</span></div>
+          <div><strong>Made to order</strong><span>Small batch pieces</span></div>
+          <div><strong>1 of 1</strong><span>No two alike</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Yube<span>Handmade</span></div>
+        <p class="blurb">Luxury handmade crochet swimwear, resort wear, and statement pieces, each one crocheted by hand and made to be worn and remembered.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">Bikini</a></li>
+          <li><a href="#shop">Swimsuit</a></li>
+          <li><a href="#shop">The Vest Set</a></li>
+          <li><a href="#shop">YUBE Yarn</a></li>
+          <li><a href="#shop">Shop All</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Brand</h4>
+        <ul>
+          <li><a href="#made">Meet the Designer</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#signup">New Drops</a></li>
+          <li><a href="#top">Customer Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#top">Contact Us</a></li>
+          <li><a href="#top">Shipping</a></li>
+          <li><a href="#top">Returns</a></li>
+          <li><a href="#signup">Restock Alerts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>Copyright 2026 Yube Handmade. Handmade crochet, made with care.</div>
+      <div class="pay">
+        <span>Visa</span><span>Mastercard</span><span>Amex</span><span>PayPal</span><span>Apple Pay</span><span>Shop Pay</span><span>Google Pay</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
